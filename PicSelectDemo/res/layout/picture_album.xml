@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/album"
+        android:textSize="18sp"/>
+    <!-- 图片选择 中选择相册的 弹出窗口 -->
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada" >
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

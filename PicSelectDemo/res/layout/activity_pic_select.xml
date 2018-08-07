@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/topbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbar_shape" >
+
+        <!-- 返回按钮 -->
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_back" />
+
+        <!-- 选择图片title -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/select_pricture"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+        
+        <Button
+            android:id="@+id/complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignRight="@id/title"
+        	android:layout_marginRight="8dp"
+        	android:layout_marginEnd="8dp"
+            android:text="@string/finish"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_bg5" />
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/child_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="108dip"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:padding="5dip"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dip" >
+    </GridView>
+    
+    <RelativeLayout
+        android:id="@+id/buttombanner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#708090" >
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:padding="8dip"
+            android:text="@string/allpricture"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignRight="@id/album"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="5dp"
+            android:text="@string/preview"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 非圆角 -->
+    <item android:state_pressed="true" android:drawable="@drawable/btn_bg_pre2"/>
+    <item android:drawable="@drawable/blue_blackground"/>
+</selector>

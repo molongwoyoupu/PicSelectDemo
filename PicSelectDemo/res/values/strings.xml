@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PicSelectDemo</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="allpricture">所有图片</string>
+    <string name="preview">预览</string>
+    <string name="album">相册</string>
+    <string name="select_pricture">选择图片</string>
+    <string name="finish">完成</string>
+    <string name="ok">提交</string>
+    
+    <string name="back">返回</string>
+
+</resources>

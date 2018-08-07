@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff171b19"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.picselect.view.ScrollViewPager
+            android:id="@+id/imagebrowser_svp_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="#66000000"
+            android:gravity="center_vertical" >
+
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/yt_btn_back_normal"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_del"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone"/>
+
+        <com.picselect.view.PhotoTextView
+            android:id="@+id/imagebrowser_ptv_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:textColor="#ffcdcdcd"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+</LinearLayout>
